@@ -1,17 +1,23 @@
 [
     {
-        "url" : ""
+        "url" : "https://rahulshettyacademy.com/client",
+        "username" : "test7lYM@gmail.com",
+        "password" : "Test@123",
+        "productName" : "IPHONE 13 PRO"
+    },
+
+   {
+        "url" : "https://rahulshettyacademy.com/client",
+        "username" : "test7lYM@gmail.com",
+        "password" : "Test@123",
+        "productName" : "ZARA COAT 3"
     },
 
     {
-        "url" : ""
-    },
-
-    {
-        "url" : ""
-    },
-
-    {
-        "url" : ""
+        "url" : "https://rahulshettyacademy.com/client",
+        "username" : "test7lYM@gmail.com",
+        "password" : "Test@123",
+        "productName" : "ADIDAS ORIGINAL"
     }
 ]
+

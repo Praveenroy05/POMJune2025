@@ -30,3 +30,4 @@ test("Search and view the product details", async ()=>{
     await dashboardPage.searchProductAndViewDetails(pn)
     await expect(productViewPage.productName).toHaveText(pn)
 })
+

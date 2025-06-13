@@ -10,12 +10,12 @@ test.beforeEach(async ({page})=>{
     await loginPage.launchURL(loginData.url)
 })
 
-test("Login test using valid credential", async () => {
+test("@smoke @regression Login test using valid credential", async () => {
     await loginPage.validLogin(loginData.username, loginData.password)
     await expect(loginPage.homePageIdentifier).toBeVisible()
 
 })
-test("Login test using invalid credential", async () => {
+test("Login test using invalid credential", {tag: '@smoke'},async () => {
     await loginPage.invalidLogin(loginData.username, loginData.incorrectPassword)
     await expect(loginPage.errMessage).toContainText("Incorrect email or password.")
 })

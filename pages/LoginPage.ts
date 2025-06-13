@@ -38,7 +38,7 @@ export class LoginPage{
      async invalidLogin(username, incorrectPassword){
         await this.username.fill(username)
         await this.password.fill(incorrectPassword)
-        await this.loginBtn.click()
+        await this.loginBtn.click({timeout : 20000})
     }
 
 }

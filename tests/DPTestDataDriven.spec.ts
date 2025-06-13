@@ -17,14 +17,14 @@ test.beforeEach(async ({page})=>{
     loginPage = new LoginPage(page)
 })
 for(let data of datas){
-test(`Search and add the product to the cart for ${data.productName} `, async ()=>{
+test(`@smoke Search and add the product to the cart for ${data.productName} `, async ()=>{
     await loginPage.launchURL(data.url)
     await loginPage.validLogin(data.username, data.password)
     await dashboardPage.searchProductAndAddToCart(data.productName)
     await expect(dashboardPage.addToCartSucceddMsg).toContainText("Product Added To Cart")
 })
 
-test(`Search and view the product details for ${data.productName}`, async ()=>{
+test(`@regression Search and view the product details for ${data.productName}`, async ()=>{
     await loginPage.launchURL(data.url)
     await loginPage.validLogin(data.username, data.password)
     await dashboardPage.searchProductAndViewDetails(data.productName)

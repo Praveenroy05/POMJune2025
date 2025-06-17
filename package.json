@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    
+    "fullTest": "npx playwright test",
+    "smokeTest": "npx playwright test --grep @smoke",
+    "regressionTest": "npx playwright test --grep @regression"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +13,9 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.29"
+    "@types/node": "^22.15.29",
+    "allure-commandline": "^2.34.0",
+    "allure-playwright": "^3.2.2"
   },
   "dependencies": {
     "codegen": "^0.1.0",

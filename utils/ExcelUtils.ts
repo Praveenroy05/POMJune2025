@@ -3,6 +3,8 @@ import xlsx from 'xlsx'
 export class ExcelUtils{
 
 
+
+
     static getDataFromExcel(filePath : string, sheetName: string){
 
         // Exception handling
@@ -11,7 +13,6 @@ export class ExcelUtils{
             const sheet = workbook.Sheets[sheetName]
             const data = xlsx.utils.sheet_to_json(sheet)
             return data
-
         }
         catch(e){
             console.log(e)
@@ -20,3 +21,7 @@ export class ExcelUtils{
     }
 
 }
+
+
+// object.key
+// object["key"]
